@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.0.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'pg'
+gem 'taps'
 # Use Puma as the app server
 gem 'puma', '~> 3.10.0'
 # Use SCSS for stylesheets
@@ -70,10 +72,15 @@ gem 'ransack', '~> 1.7'
 
 #--- AirKong ---
 gem 'twilio-ruby', '~> 4.11.1'
-gem 'fullcalendar-rails', '~> 3.4.0'
+gem 'fullcalendar', '~> 3.8', '>= 3.8.2'
 
 gem 'stripe', '~> 3.0.0'
 gem 'rails-assets-card', source: 'https://rails-assets.org'
 
 gem 'omniauth-stripe-connect', '~> 2.10.0'
 gem 'chartkick', '~> 2.2.4'
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end

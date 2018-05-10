@@ -25,6 +25,7 @@ class CalendarsController < ApplicationController
   end
 
   def host
+    #byebug
     @rooms = current_user.rooms
 
     params[:start_date] ||= Date.current.to_s

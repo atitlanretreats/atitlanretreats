@@ -12,6 +12,7 @@
       </div>
 
       <%= f.hidden_field :start_date, id: "start-date", value: params[:start_date], onchange: "$(this.form).submit()" %>
+
     <% end %>
   </div>
 <% end %>
@@ -57,6 +58,7 @@
         </a>
       `);
     },
+
     dayRender: function(date, cell) {
       var dayInfo = $.grep(days, function(e) {
         return e.day === date.format();
